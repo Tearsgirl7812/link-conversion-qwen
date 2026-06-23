@@ -18,6 +18,27 @@
 - X (Twitter)
 - Threads
 
+## Bot 整合（簡便部署）
+
+現在我們提供了三個平台的完整 Bot 實現，您可以直接部署使用：
+
+### 🤖 Telegram Bot
+- 自動偵測和轉換連結
+- 簡單的配置流程
+- [查看配置說明](bots/README.md#1️⃣-telegram-bot)
+
+### 🎮 Discord Bot  
+- 自動轉換 + 手動命令
+- 美觀的 Embed 輸出
+- [查看配置說明](bots/README.md#2️⃣-discord-bot)
+
+### 📱 WhatsApp Bot
+- 基於官方 Cloud API
+- Webhook 自動回覆
+- [查看配置說明](bots/README.md#3️⃣-whatsapp-bot)
+
+所有 Bot 代碼都在 [`bots/`](bots/) 目錄中，包含完整的配置說明。
+
 ## 使用方法
 
 ### 方法一：直接在瀏覽器開啟
@@ -47,12 +68,13 @@
 
 ### 方法三：整合到 Bot
 
-由於這是純 HTML/JavaScript 實現，您可以輕鬆整合到：
-- Telegram Bot
-- Discord Bot
-- WhatsApp Bot
+我們已經提供了完整的 Bot 實現，位於 [`bots/`](bots/) 目錄：
 
-只需提取 `convertLink()` 函數並整合到您的 Bot 程式碼中即可。
+- **Telegram Bot**: `bots/telegram_bot.py` - 自動偵測和轉換連結
+- **Discord Bot**: `bots/discord_bot.py` - 支援自動轉換和手動命令
+- **WhatsApp Bot**: `bots/whatsapp_bot.py` - 基於官方 Cloud API
+
+詳細配置說明請查看 [`bots/README.md`](bots/README.md)。
 
 ## 轉換範例
 

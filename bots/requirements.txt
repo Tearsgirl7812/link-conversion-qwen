@@ -1,0 +1,14 @@
+# Bot 依賴包
+
+# Telegram Bot
+python-telegram-bot>=20.0
+
+# Discord Bot
+discord.py>=2.0.0
+
+# WhatsApp Bot
+flask>=2.0.0
+requests>=2.28.0
+
+# 通用工具
+python-dotenv>=1.0.0
