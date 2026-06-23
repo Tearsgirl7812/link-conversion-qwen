@@ -1,1 +1,24 @@
-Nothing should be ignored in this case, as the changes only include source/config files (HTML and Markdown) without any build artifacts, dependencies, or temporary files.
+```
+# Dependencies
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+*.env.*
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Editors
+.vscode/
+.idea/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+```
